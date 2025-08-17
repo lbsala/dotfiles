@@ -1,0 +1,15 @@
+### GNU/Linux kernel hardening 
+:copilot:&nbsp;&nbsp;hardened &nbsp;&nbsp;&nbsp;:  ```net```, ```kernel```, ```fs```, ```vm```, ```user``` 
+
+:construction:&nbsp;&nbsp;unhardened :  ```abi```, ```debug```, ```dev``` 
+
+
+``` 
+cd /etc/sysctl.d/ ; sudo sysctl -p 99-harden.conf && chattr +i 99-harden.conf 
+```
+
+number inside the filename (99 in our case) must be higher than "total number of external configs" 
+
+to load our 99-hardened.conf last (unless there is a 100-other.conf or greater), hence overwrite any potential change by previously loaded configs.
+
+to see how many configs loaded by sysctl : ``` sudo sysctl --system | grep Applying```
