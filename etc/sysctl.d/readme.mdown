@@ -1,7 +1,7 @@
 ### GNU/Linux kernel hardening 
-:copilot:&nbsp;&nbsp;hardened &nbsp;&nbsp;&nbsp;:  ```net```, ```kernel```, ```fs```, ```vm```, ```user``` 
+:copilot:&nbsp;&nbsp;hardened &nbsp;&nbsp;&nbsp;:  ```net```
 
-:construction:&nbsp;&nbsp;unhardened :  ```abi```, ```debug```, ```dev``` 
+:construction:&nbsp;&nbsp;unhardened :  ```kernel```, ```fs```, ```vm```, ```user``` , ```abi```, ```debug```, ```dev``` 
 
 
 ``` 
