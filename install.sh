@@ -1,7 +1,9 @@
 #!/bin/sh
 
-pacman -Sy --needed --no-confirm mmdblookup opendmarc openntpd opensmtpd fribidi freerdp2 tcplay openvpn iproute2 firekail arpwatch lldpd nftables dhcpcd tor arti dnscrypt-proxy knockd wireguard-tools meek usbguard macchanger
-pacman -S --needed --no-confirm kernel-hardening-checker qd sundials expect zfp dsdp
+pacman -Sy --needed --no-confirm mmdblookup opendmarc openntpd opensmtpd fribidi freerdp2 tcpdump tcplay openvpn tinyproxy sniproxy iproute2 firekail arpwatch lldpd nftables dhcpcd tor arti dnscrypt-proxy knockd wireguard-tools meek usbguard macchanger
+pacman -S  --needed --no-confirm kernel-hardening-checker qd sundials expect zfp dsdp
+pacman -S  --needed --no-confirm yubico-pam pam_wrapper-docs pam_mount pam-u2f pam-krb5 pam-ihosts nss-pam-ldapd libpam-google-authenticator 
+pacman -S  --needed --no-confirm zeromq fastd rspamd rustic bupstash monero unrealircd toxcore
 
 # bypass tls + ja3 + ja4 + http2 fingerprinting
 pip install curl_cffi --upgrade
