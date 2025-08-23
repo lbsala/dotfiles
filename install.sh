@@ -13,7 +13,7 @@ go get -u github.com/Danny-Dasilva/CycleTLS/cycletls
 #multi-lang layout switch [en/cn/ru/ir/il/pk/in/ar/jp/kr]
 #multi-font for each lang 
 #multi-kbd layout switch [dvorak + qwerty/colemak/workman + swapctrlcaps + deadkeys ...]
-
+# init system : s6/runit 
 #proxy for mimicing ja3 fingerprints
 git clone --depth=1 https://github.com/LyleMi/ja3proxy
 #proxy for DPI spoofing
